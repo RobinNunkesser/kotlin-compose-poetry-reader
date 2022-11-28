@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.7">
-      <module name="PoetryReader.app" target="11" />
-      <module name="PoetryReader.infra" target="1.8" />
-      <module name="PoetryReader.infra.main" target="1.8" />
-      <module name="PoetryReader.infra.test" target="1.8" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11" />
   </component>
 </project>
