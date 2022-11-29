@@ -1,7 +1,7 @@
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
-    id("dev.icerock.mobile.multiplatform-resources") version "0.20.1"
+    //id("dev.icerock.mobile.multiplatform-resources") version "0.20.1"
 }
 
 kotlin {
@@ -59,12 +59,12 @@ android {
 dependencies {
     implementation("com.beust:klaxon:5.5")
     implementation(project(":domain"))
-    testImplementation("junit:junit:4.13.2")
+    testImplementation("junit:junit:4.13")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.8")
     commonMainApi("dev.icerock.moko:resources:0.20.1")
     commonTestImplementation("dev.icerock.moko:resources-test:0.20.1")
 }
 
-multiplatformResources {
-    multiplatformResourcesPackage = "de.hshl.isd.poetryreader.infra" // required
-}
+//multiplatformResources {
+//    multiplatformResourcesPackage = "de.hshl.isd.poetryreader.infra" // required
+//}
