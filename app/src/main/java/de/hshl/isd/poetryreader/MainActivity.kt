@@ -42,6 +42,7 @@ fun MainContent() {
     }
 
     Column {
+        Text("Poetry Reader")
         Button(onClick = {
             scope.launch {
                 kotlin.runCatching {
@@ -51,7 +52,7 @@ fun MainContent() {
                     .onFailure(::failure)
             }
         }) {
-            Text("Start")
+            Text("Give me some poetry")
         }
         Text(resultText)
     }
